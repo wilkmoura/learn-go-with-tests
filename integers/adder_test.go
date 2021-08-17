@@ -14,6 +14,12 @@ func TestAdder(t *testing.T) {
 	}
 }
 
+func BenchmarkAdd(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Add(4, 5)
+	}
+}
+
 func ExampleAdd() {
 	sum := Add(1, 5)
 	fmt.Println(sum)
