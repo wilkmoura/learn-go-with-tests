@@ -13,6 +13,11 @@ func TestPerimeter(t *testing.T) {
 }
 
 func TestArea(t *testing.T) {
+	/*
+		Table driven test is a great tool
+		when you need to test various implementations of an interface
+	*/
+
 	areaTests := []struct {
 		shape Shape
 		want  float64
